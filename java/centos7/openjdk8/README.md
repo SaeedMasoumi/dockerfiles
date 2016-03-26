@@ -1,6 +1,8 @@
 dockerfile-centos-openjdk
 ======================
 
+[![](https://badge.imagelayers.io/saeedmasoumi/centos7-openjdk8:latest.svg)](https://imagelayers.io/?images=saeedmasoumi/centos7-openjdk8:latest 'Get your own badge on imagelayers.io')
+
 A Dockerfile that Produces a centos7-based docker image that will run the latest openjdk8.
 
 To build from source:
