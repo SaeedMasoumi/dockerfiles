@@ -2,7 +2,7 @@
 
 <p>
 <a href='https://imagelayers.io/?images=saeedmasoumi/centos7-upsource:latest' title='Get your own badge on imagelayers.io'><img src='https://badge.imagelayers.io/saeedmasoumi/centos7-upsource:latest.svg'></a>
-    <a href="https://img.shields.io/badge/upsource-v2.5.5074-blue.svg">
+    <a href="https://www.jetbrains.com/upsource/download/">
         <img src="https://img.shields.io/badge/upsource-v2.5.5074-blue.svg"
              alt="Upsource version">
     </a>
