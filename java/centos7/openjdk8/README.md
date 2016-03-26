@@ -13,5 +13,5 @@ To build from source:
 
 To run image from docker hub:
 ```
-# sudo docker run --it --rm --name openjdk8 saeedmasoumi/centos7-openjdk8 java -version
+# sudo docker run -it --rm --name openjdk8 saeedmasoumi/centos7-openjdk8 java -version
 ```
