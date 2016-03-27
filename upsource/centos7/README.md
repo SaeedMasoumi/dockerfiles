@@ -6,8 +6,15 @@ This image is based on [centos7](https://hub.docker.com/r/saeedmasoumi/centos7-o
 
 ## Usage
 
-Run this:
+To run a container:
 
 ```
 # sudo docker run -d --name upsource -p 8080:8080 --restart=always saeedmasoumi/centos7-upsource
+```
+
+If you want to mount upsource backups/data/temp/logs files in your host, run this: 
+
+
+```
+# sudo docker run -d --name upsource -v "path/on/host:/var/lib/upsource" -p 8080:8080 --restart=always saeedmasoumi/centos7-upsource
 ```
