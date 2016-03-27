@@ -12,7 +12,7 @@ To run a container:
 # sudo docker run -d --name upsource -p 8080:8080 --restart=always saeedmasoumi/centos7-upsource
 ```
 
-If you want to mount upsource _backups/data/temp/logs_** files in your host, run this: 
+If you want to mount upsource **_backups/data/temp/logs_** files in your host, run this: 
 
 
 ```
