@@ -1,6 +1,6 @@
 # Upsource for Centos7
 
-[![](https://badge.imagelayers.io/saeedmasoumi/centos7-upsource:latest.svg)](https://imagelayers.io/?images=saeedmasoumi/centos7-upsource:latest 'Get your own badge on imagelayers.io') [![](https://img.shields.io/badge/upsource-v2.5.5074-blue.svg)](https://www.jetbrains.com/upsource/download/)
+[![](https://badge.imagelayers.io/saeedmasoumi/centos7-upsource:latest.svg)](https://imagelayers.io/?images=saeedmasoumi/centos7-upsource:latest 'Get your own badge on imagelayers.io') [![](https://img.shields.io/badge/upsource-v3.0.4291-blue.svg)](https://www.jetbrains.com/upsource/download/)
 
 This image is based on [centos7](https://hub.docker.com/r/saeedmasoumi/centos7-openjdk8/) with latest version of openjdk8 (jre).
 
