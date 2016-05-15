@@ -3,8 +3,8 @@ MAINTAINER Saeed Masoumi <s-masoumi@live.com>
 
 # Forked from https://github.com/esycat/docker-upsource/ to make it run with centos
 
-ENV APP_VERSION 2.5
-ENV APP_BUILD ${APP_VERSION}.5074
+ENV APP_VERSION 3.0
+ENV APP_BUILD ${APP_VERSION}.4291
 ENV APP_PORT 8080
 ENV APP_SUFFIX upsource
 
@@ -16,6 +16,12 @@ ENV APP_HOME /var/lib/$APP_SUFFIX
 # Install needed packages
 RUN yum update -y
 RUN yum install -y unzip wget
+
+# Set limits for upsource
+RUN echo '* - memlock unlimited' >> /etc/security/limits.conf
+RUN echo '* - nofile 100000' >> /etc/security/limits.conf
+RUN echo '* - nproc 32768' >> /etc/security/limits.conf
+RUN echo '* - as unlimited' >> /etc/security/limits.conf
 
 # preparing home (data) directory and user+group
 RUN mkdir -p $APP_HOME
