@@ -31,6 +31,7 @@ WORKDIR $APP_DIR
 RUN wget -q https://download.jetbrains.com/upsource/$APP_DISTFILE && \
     unzip -q $APP_DISTFILE && \
     rm $APP_DISTFILE && \
+	mv upsource-* $APP_DIR && \
     chown -R $APP_USER:$APP_USER $APP_DIR
 
 RUN bin/upsource.sh configure \
