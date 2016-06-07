@@ -27,13 +27,14 @@ RUN mkdir -p $APP_HOME
 RUN mkdir -p $APP_DIR
 
 # downloading and unpacking the distribution, removing bundled JVMs
-WORKDIR $APP_DIR
+WORKDIR /opt
 RUN wget -q https://download.jetbrains.com/upsource/$APP_DISTFILE && \
     unzip -q $APP_DISTFILE && \
     rm $APP_DISTFILE && \
 	mv upsource-* $APP_DIR && \
     chown -R $APP_USER:$APP_USER $APP_DIR
 
+WORKDIR $APP_DIR
 RUN bin/upsource.sh configure \
     --backups-dir $APP_HOME/backups \
     --data-dir    $APP_HOME/data \
