@@ -4,7 +4,7 @@ MAINTAINER Saeed Masoumi <s-masoumi@live.com>
 # Forked from https://github.com/esycat/docker-upsource/ to make it run with centos
 
 ENV APP_VERSION 3.0
-ENV APP_BUILD ${APP_VERSION}.4291
+ENV APP_BUILD ${APP_VERSION}.4364
 ENV APP_PORT 8080
 ENV APP_FOLDER upsource
 
